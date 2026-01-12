@@ -1,0 +1,7 @@
+https://xb.uz/page/physical-deposit?currency=USD&status=1
+https://nbu.uz/jismoniy-shaxslar-omonatlar
+https://agrobank.uz/uz/person/deposits?category=xorijiy-valyutada
+https://mkbank.uz/oz/private/deposit/?currency=USD&filter=yes&fr=2
+https://brb.uz/jismoniy-shaxslarga/omonatlar?tab=currency-deposit
+https://garantbank.uz/ru/vklady
+

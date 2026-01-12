@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+result.xlsx
+result.csv
+sites_status*.csv
+
+*.egg-info/
+dist/
+build/

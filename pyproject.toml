@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deposit-rate-scraper"
+version = "0.1.0"
+description = "Scrape USD deposit rates from Uzbek banks and export to Excel/CSV"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "ML-by-Alex"},
+]
+keywords = ["uzbekistan", "banking", "scraper", "deposit", "rates", "finance"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.2",
+    "lxml>=5.0.0",
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+    "tenacity>=8.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+]
+
+[project.scripts]
+deposits = "deposits.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ML-by-Alex/deposit-rate-scraper"
+Repository = "https://github.com/ML-by-Alex/deposit-rate-scraper.git" 
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
