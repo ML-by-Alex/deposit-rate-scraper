@@ -18,10 +18,15 @@ Scrapes USD deposit rates from Uzbek bank websites and exports clean Excel/CSV r
 python -m venv venv
 
 # 2. Activate it
-# Windows:
-venv\Scripts\activate
-# Linux/Mac:
+# Windows (PowerShell)
+.\venv\Scripts\Activate.ps1
+
+# Windows (cmd)
+venv\Scripts\activate.bat
+
+# Linux/Mac
 source venv/bin/activate
+
 
 # 3. Install dependencies
 pip install -r requirements.txt
@@ -31,4 +36,5 @@ echo "https://xb.uz/page/physical-deposit?currency=USD" > banks_urls.txt
 echo "https://mkbank.uz/oz/private/deposit/?currency=USD" >> banks_urls.txt
 
 # 5. Run
+
 python -m deposits
